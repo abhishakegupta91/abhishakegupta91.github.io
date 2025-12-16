@@ -166,7 +166,17 @@
     <section id="about" class="bg-slate-50">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
         <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">About Me</h2>
-        <p class="mt-2 max-w-3xl text-slate-600">Proven ability to optimize performance, implement TDD/BDD best practices, and collaborate across engineering teams to deliver impactful core product features.</p>
+        <div class="mt-2 max-w-6xl space-y-4 text-slate-600">
+          <p>Over the last 12 years, I have successfully transformed my career from an Operations Engineer into a specialized Senior Python Developer and aspiring Technical Architect. My journey began with one of India's largest IT firms and has evolved through innovative startups and global corporations.</p>
+          <p>My current focus is on high-level system design and cloud-native applications. I specialize in building robust backend platforms for Finance, E-commerce, and Logistics.</p>
+          <div id="aboutMore" class="hidden space-y-4">
+            <p>Recently, I have focused on orchestrating complex multi-provider delivery networks, designing real-time failover mechanisms, and implementing Redis-based caching layers that drastically reduce load times. I thrive in environments where code quality, TDD, and scalability are paramount.</p>
+            <p>Beyond my professional work, I am deeply passionate about the intersection of technology and finance. As an aspiring Quant Developer, I develop algorithmic trading strategies using the Interactive Brokers API. This personal focus on low-latency architecture and high-precision data handling influences my engineering philosophy, ensuring that the systems I build are not just functional, but highly optimized and fail-safe.</p>
+          </div>
+          <div>
+            <button id="aboutMoreBtn" type="button" class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-2sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">Read more</button>
+          </div>
+        </div>
 
         <div class="mt-8 grid gap-6 lg:grid-cols-3">
           <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -181,116 +191,6 @@
             <p class="text-2sm font-semibold text-slate-900">Modern DevOps</p>
             <p class="mt-2 text-2sm leading-relaxed text-slate-600">Docker, Kubernetes, CI/CD pipelines, monitoring with ELK/Splunk/Datadog, and migration from monolithic to microservice architectures.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience / Career Contours -->
-    <section id="experience" class="bg-white">
-      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Experience / Career Contours</h2>
-        <p class="mt-2 max-w-3xl text-slate-600">More than a decade of professional experience across backend systems, microservices, and DevOps.</p>
-
-        <div class="mt-10 grid gap-6">
-          <!-- Role 1: ItsaCheckmate -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <h3 class="text-2lg font-semibold text-slate-900">Senior Python Developer</h3>
-                <p class="mt-1 text-2sm text-slate-600">ItsaCheckmate</p>
-              </div>
-              <p class="text-2sm font-semibold text-accent">Jul 2023 — Present</p>
-            </div>
-            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
-              <li>Led multi-provider delivery orchestration (DoorDash, Uber Direct, Relay) with unified abstraction layer for quoting, dispatching, and tracking.</li>
-              <li>Migrated menu system to new architecture with Redis caching, reducing load times from 40 minutes to seconds.</li>
-              <li>Designed real-time failover mechanism for automatic rerouting to backup providers, reducing order cancellations.</li>
-              <li>Re-engineered Celery background tasks from monolithic to chunk-based architecture with connection pooling.</li>
-            </ul>
-          </article>
-
-          <!-- Role 2: Bluetick Consultants -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Engineer</h3>
-                <p class="mt-1 text-2sm text-slate-600">Bluetick Consultants</p>
-              </div>
-              <p class="text-2sm font-semibold text-accent">Aug 2022 — Jun 2023</p>
-            </div>
-            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
-              <li>Built "Company Management" microservice using Golang and Fiber for complex tree-like folder structures.</li>
-              <li>Analyzed and documented legacy "Megatron" E-Commerce Cart System (Python-Flask RESTful API).</li>
-              <li>Conducted Knowledge Transfer sessions on architectural designs and feature enhancements.</li>
-              <li>Implemented automated Postman collections for REST API testing.</li>
-            </ul>
-          </article>
-
-          <!-- Role 3: Rackspace Technology -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Developer III</h3>
-                <p class="mt-1 text-2sm text-slate-600">Rackspace Technology</p>
-              </div>
-              <p class="text-2sm font-semibold text-accent">Nov 2019 — Aug 2022</p>
-            </div>
-            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
-              <li>Enhanced Flask-based StorageCenter application for hardware data collection (Dell, EMC, PureStorage).</li>
-              <li>Reduced API latency by 60% via RabbitMQ and Celery automation.</li>
-              <li>Migrated monolithic application to Kubernetes-based microservice architecture; refactored frontend to React SPA.</li>
-              <li>Developed WidgetBoss CLI tools, reducing Client Facing Team's SLA time by 70%.</li>
-            </ul>
-          </article>
-
-          <!-- Role 4: Gemini Solutions -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Engineer (ETL)</h3>
-                <p class="mt-1 text-2sm text-slate-600">Gemini Solutions</p>
-              </div>
-              <p class="text-2sm font-semibold text-accent">Dec 2017 — Nov 2019</p>
-            </div>
-            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
-              <li>Designed Kapture-CRM microservice for customer ticket history tracking via Node.js, Express, and Kafka.</li>
-              <li>Developed Django APIs for Mediscan — descriptive and predictive analysis of patient vitals.</li>
-              <li>Built internal CLI tools for FTP/SFTP access scheduled via Autosys.</li>
-              <li>Automated GoldenGate replication delay calculation and reporting from Sybase to Oracle.</li>
-            </ul>
-          </article>
-
-          <!-- Role 5: Global Analytics -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <h3 class="text-2lg font-semibold text-slate-900">DevOps Engineer</h3>
-                <p class="mt-1 text-2sm text-slate-600">Global Analytics</p>
-              </div>
-              <p class="text-2sm font-semibold text-accent">Aug 2016 — Nov 2017</p>
-            </div>
-            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
-              <li>Partnered with developers to implement DONS (DevOps Navigation System) monitoring tool API in Django.</li>
-              <li>Integrated with Zabbix for automated alerts and issue tracking.</li>
-              <li>Reduced manpower required for issue identification and escalation by 80%.</li>
-            </ul>
-          </article>
-
-          <!-- Role 6: Infosys -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <h3 class="text-2lg font-semibold text-slate-900">Senior System Engineer (Ops)</h3>
-                <p class="mt-1 text-2sm text-slate-600">Infosys</p>
-              </div>
-              <p class="text-2sm font-semibold text-accent">Feb 2014 — Jul 2016</p>
-            </div>
-            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
-              <li>Developed Flask-Restful backend APIs for Bus Ticket Vending POC serving Android frontend.</li>
-              <li>Provided L2 support for server applications using Splunk, ELK, and Oracle Siebel CRM.</li>
-              <li>Collaborated with cross-functional teams on automated ticketing system implementation.</li>
-            </ul>
-          </article>
         </div>
       </div>
     </section>
@@ -353,6 +253,18 @@
               <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Autosys</span>
             </div>
           </div>
+          
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2sm font-semibold text-slate-900">AWS</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">EC2</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">S3</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">RDS (PostgreSQL)</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">VPC</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Subnet</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Route53</span>
+            </div>
+          </div>
 
           <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 class="text-2sm font-semibold text-slate-900">Monitoring & Logging</h3>
@@ -364,6 +276,116 @@
               <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Zabbix</span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Career Contours -->
+    <section id="experience" class="bg-white">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Experience / Career Contours</h2>
+        <p class="mt-2 max-w-3xl text-slate-600">More than a decade of professional experience across backend systems, microservices, and DevOps.</p>
+
+        <div class="mt-10 grid gap-6">
+          <!-- Role 1: ItsaCheckmate -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior Python Developer</h3>
+                <p class="mt-1 text-2sm text-slate-600">ItsaCheckmate</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Jul 2023 — Present</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Led multi-provider delivery orchestration (DoorDash, Uber Direct, Relay) with unified abstraction layer for quoting, dispatching, and tracking.</li>
+              <li>Migrated menu system to new architecture with Redis caching, reducing load times from 40 minutes to seconds.</li>
+              <li>Designed real-time failover mechanism for automatic rerouting to backup providers, reducing order cancellations.</li>
+              <li>Re-engineered Celery background tasks from monolithic to chunk-based architecture with connection pooling.</li>
+            </ul>
+          </article>
+
+          <!-- Role 2: Bluetick Consultants -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Engineer</h3>
+                <p class="mt-1 text-2sm text-slate-600">Bluetick Consultants</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Aug 2022 — Jun 2023</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Built Golang/Fiber microservices to manage hierarchical data structures and CRUD workflows.</li>
+              <li>Analyzed and documented a legacy e-commerce cart platform (Python/Flask REST APIs) to enable maintainable enhancements.</li>
+              <li>Conducted Knowledge Transfer sessions on architectural designs and feature enhancements.</li>
+              <li>Implemented automated Postman collections for REST API testing.</li>
+            </ul>
+          </article>
+
+          <!-- Role 3: Rackspace Technology -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Developer III</h3>
+                <p class="mt-1 text-2sm text-slate-600">Rackspace Technology</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Nov 2019 — Aug 2022</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Enhanced a Flask-based platform for enterprise storage hardware data collection and analysis across multiple vendors.</li>
+              <li>Reduced API latency by 60% via RabbitMQ and Celery automation.</li>
+              <li>Migrated monolithic application to Kubernetes-based microservice architecture; refactored frontend to React SPA.</li>
+              <li>Developed internal CLI tooling to reduce support SLAs by streamlining common operational workflows.</li>
+            </ul>
+          </article>
+
+          <!-- Role 4: Gemini Solutions -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Engineer (ETL)</h3>
+                <p class="mt-1 text-2sm text-slate-600">Gemini Solutions</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Dec 2017 — Nov 2019</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Designed a customer support/ticketing history microservice using Node.js, Express, and Kafka.</li>
+              <li>Developed Django REST APIs for healthcare analytics (descriptive and predictive analysis of patient vitals).</li>
+              <li>Built internal CLI tools for FTP/SFTP access scheduled via Autosys.</li>
+              <li>Automated GoldenGate replication delay calculation and reporting from Sybase to Oracle.</li>
+            </ul>
+          </article>
+
+          <!-- Role 5: Global Analytics -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">DevOps Engineer</h3>
+                <p class="mt-1 text-2sm text-slate-600">Global Analytics</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Aug 2016 — Nov 2017</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Partnered with developers to implement a monitoring/observability tool API in Django for faster incident triage.</li>
+              <li>Integrated with Zabbix for automated alerts and issue tracking.</li>
+              <li>Reduced manpower required for issue identification and escalation by 80%.</li>
+            </ul>
+          </article>
+
+          <!-- Role 6: Infosys -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior System Engineer (Ops)</h3>
+                <p class="mt-1 text-2sm text-slate-600">Infosys</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Feb 2014 — Jul 2016</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Developed Flask-RESTful backend APIs for an automated ticketing proof-of-concept serving a mobile frontend.</li>
+              <li>Provided L2 support for server applications using Splunk, ELK, and Oracle Siebel CRM.</li>
+              <li>Collaborated with cross-functional teams on automated ticketing system implementation.</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
@@ -414,151 +436,76 @@
       </div>
     </section>
 
-    <!-- Contributions & Projects -->
+    <!-- Sectors & Domains (compliance-friendly) -->
     <section id="projects" class="bg-slate-50">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
         <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Contributions & Projects</h2>
-            <p class="mt-2 max-w-3xl text-slate-600">Key projects showcasing backend systems, microservices, and DevOps expertise.</p>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Sectors & Domains</h2>
+            <p class="mt-2 max-w-3xl text-slate-600">What I’ve worked on: domains, problems solved, and my responsibilities.</p>
           </div>
-          <a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-2sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">Let's collaborate</a>
+          <a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-2sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">Let’s collaborate</a>
         </div>
 
         <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Project 1: Direct Ordering (Open Tender) -->
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Direct Ordering</h3>
-            <p class="text-2sm text-slate-500">Open Tender</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">All-in-one platform that allows restaurant brands to launch digital ordering system—including an admin panel, customer-facing web portal, and mobile app—often in less than a week. We support everything from menu, in-house & third-party loyalty, and order processing like Pickup, Delivery, and Catering.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">FastAPI</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">MySql</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Docker</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Postman</span>
-            </div>
+            <h3 class="text-2lg font-semibold text-slate-900">FoodTech / Restaurant Ordering & Delivery</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Built backend systems that power ordering, delivery quoting/dispatching, and reliability improvements for high-volume operations.</p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Designed/owned REST APIs and background workflows for ordering and delivery orchestration.</li>
+              <li>Improved reliability with failover strategies and graceful degradation paths.</li>
+              <li>Optimized performance using caching and async processing.</li>
+            </ul>
           </article>
 
-          <!-- Project 1: Company Management -->
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Company Management</h3>
-            <p class="text-2sm text-slate-500">Part of Test Studio Management</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Built microservice in Golang-Fiber for CRUD operations on tree-like folder structures for testcase files. Created SDLC design docs with product team and architects.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Golang</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Fiber</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Postman</span>
-            </div>
+            <h3 class="text-2lg font-semibold text-slate-900">E-Commerce Platforms</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Worked on cart/checkout-adjacent services and integrations where correctness, latency, and resilience directly impact conversion.</p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Modernized and documented legacy API surfaces to unblock safe iteration.</li>
+              <li>Implemented testing and release practices to reduce regressions.</li>
+              <li>Collaborated with stakeholders to translate requirements into scalable designs.</li>
+            </ul>
           </article>
 
-          <!-- Project 2: Megatron -->
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Megatron</h3>
-            <p class="text-2sm text-slate-500">E-Commerce Cart Management System</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Analyzed and documented existing Python-Flask RESTful API project. Conducted KT sessions for team members on designs, feature enhancements, and bug fixing.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Flask</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">REST API</span>
-            </div>
+            <h3 class="text-2lg font-semibold text-slate-900">Customer Support / CRM Integrations</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Built event-driven services to track and synchronize customer ticket activity across internal systems and external CRMs.</p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Designed microservices and data models for ticket history and auditability.</li>
+              <li>Used messaging/streaming to ensure reliable, decoupled integrations.</li>
+              <li>Improved observability with structured logs and actionable metrics.</li>
+            </ul>
           </article>
 
-          <!-- Project 3: Kapture-CRM -->
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Kapture-CRM</h3>
-            <p class="text-2sm text-slate-500">Customer Ticket History Microservice</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Microservice to track customer tickets before/after posting to 3rd party CRM. Implemented RESTful APIs via Node.js, Express, and Kafka in a team of 6.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Node.js</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Express</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Kafka</span>
-            </div>
+            <h3 class="text-2lg font-semibold text-slate-900">Cloud / Infrastructure Automation</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Built and improved internal platforms that automate data collection, workflows, and operational tooling used by engineering/support teams.</p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Created automation using queues/workers to reduce latency and manual effort.</li>
+              <li>Migrated workloads towards containerized deployments (Docker/Kubernetes).</li>
+              <li>Delivered CLI tooling that standardized repetitive operational actions.</li>
+            </ul>
           </article>
 
-          <!-- Project 4: StorageCenter -->
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">StorageCenter</h3>
-            <p class="text-2sm text-slate-500">Hardware Data Collection & Analysis</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Flask-based project for hardware data from Dell, EMC, PureStorage, NetApp. Reduced API latency by 60% via RabbitMQ-Celery. Migrated to Kubernetes microservices and React SPA.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Flask</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">React</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Docker</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">K8s</span>
-            </div>
+            <h3 class="text-2lg font-semibold text-slate-900">DevOps / Monitoring & Incident Response</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Implemented monitoring APIs and alerting workflows to shorten triage time and improve incident handling consistency.</p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Integrated alert sources and automated issue routing/escalations.</li>
+              <li>Defined runbooks and improved signal-to-noise for alerts.</li>
+              <li>Reduced operational load through automation and better tooling UX.</li>
+            </ul>
           </article>
 
-          <!-- Project 5: WidgetBoss -->
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">WidgetBoss (BackupCenter)</h3>
-            <p class="text-2sm text-slate-500">CLI Tools for Client Data Operations</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Reduced SLA time by 70% for Client Facing teams by providing CLI tools for storage, backup, and scheduling operations. Conducted code reviews and PEP-8 training.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">CLI</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">PEP-8</span>
-            </div>
-          </article>
-
-          <!-- Project 6: ETL Jobs -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">ETL Jobs & Migration</h3>
-            <p class="text-2sm text-slate-500">Data Pipeline Automation</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Built CLI scripts for FTP/SFTP/FTPS access via single script, scheduled via Autosys. Automated GoldenGate replication delay reporting from Sybase to Oracle.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Autosys</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Oracle</span>
-            </div>
-          </article>
-
-          <!-- Project 7: Mediscan -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Mediscan</h3>
-            <p class="text-2sm text-slate-500">Medical Vitals Analysis</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Django APIs for descriptive and predictive analysis of corona patients' vitals via USG and X-ray data. Tested and fine-tuned REST APIs via Postman.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Django</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">REST API</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Analytics</span>
-            </div>
-          </article>
-
-          <!-- Project 8: Bus Ticket Vending -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Automatic Bus Ticket Vending</h3>
-            <p class="text-2sm text-slate-500">POC for Automated Ticketing</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">POC to automate ticketing in passenger buses. Created SDLC design docs and developed Flask-Restful backend APIs serving data to Android frontend.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Flask</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">REST API</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Android</span>
-            </div>
-          </article>
-
-          <!-- Project 9: DONS -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">DONS</h3>
-            <p class="text-2sm text-slate-500">DevOps Navigation System</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Advanced monitoring web tool RESTful API in Django, synced with Zabbix for alerts. Reduced manpower by 80% for issue identification and escalation.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Django</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Zabbix</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">DevOps</span>
-            </div>
-          </article>
-
-          <!-- Project 10: Reporting Tools -->
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Reporting Tools</h3>
-            <p class="text-2sm text-slate-500">Log Analysis & Automation</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Spearheaded log analyzer and reporting tool to analyze test logs and create Excel reports. Ad-hoc automation tasks using Python, SQL, and shell scripting.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">SQL</span>
-              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Shell</span>
-            </div>
+            <h3 class="text-2lg font-semibold text-slate-900">Data Engineering / ETL & Reporting</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Automated file transfer workflows, data pipelines, and reporting utilities used by operations and engineering teams.</p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Built schedulable scripts and jobs for secure file transfers and batch processing.</li>
+              <li>Automated replication-delay reporting and operational dashboards.</li>
+              <li>Implemented log analysis/reporting pipelines for better decision-making.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -568,26 +515,61 @@
     <section id="posts" class="bg-white">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
         <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Posts & Publications</h2>
-        <p class="mt-2 max-w-3xl text-slate-600">Featured articles on LinkedIn.</p>
 
-        <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Comfort Zone: Where Your Dreams Go to Die Quietly</h3>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Reflections on breaking out of comfort zones to pursue meaningful growth.</p>
-            <a href="https://www.linkedin.com/pulse/comfort-zone-where-your-dreams-go-die-quietly-abhishake-gupta-my9uc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
-          </article>
+        <div class="mt-8">
+          <h3 class="text-lg font-semibold text-slate-900">LinkedIn</h3>
+          <p class="mt-1 max-w-3xl text-2sm text-slate-600">Featured articles on LinkedIn.</p>
 
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Unlocking Alpha: Your Guide to Feature Engineering for Trading</h3>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">A deep dive into feature engineering techniques for quantitative trading strategies.</p>
-            <a href="https://www.linkedin.com/pulse/unlocking-alpha-your-guide-feature-engineering-trading-gupta-9rlbc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
-          </article>
+          <div class="mt-6 grid gap-6 md:grid-cols-3">
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">Comfort Zone: Where Your Dreams Go to Die Quietly</h3>
+              <p class="mt-2 text-2sm leading-relaxed text-slate-600">Reflections on breaking out of comfort zones to pursue meaningful growth.</p>
+              <a href="https://www.linkedin.com/pulse/comfort-zone-where-your-dreams-go-die-quietly-abhishake-gupta-my9uc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+            </article>
 
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-2lg font-semibold text-slate-900">Quants Workflow</h3>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">An overview of the quantitative analyst workflow from data to deployment.</p>
-            <a href="https://www.linkedin.com/pulse/quants-workflow-abhishake-gupta-8eftc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
-          </article>
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">Unlocking Alpha: Your Guide to Feature Engineering for Trading</h3>
+              <p class="mt-2 text-2sm leading-relaxed text-slate-600">A deep dive into feature engineering techniques for quantitative trading strategies.</p>
+              <a href="https://www.linkedin.com/pulse/unlocking-alpha-your-guide-feature-engineering-trading-gupta-9rlbc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">Quants Workflow</h3>
+              <p class="mt-2 text-2sm leading-relaxed text-slate-600">An overview of the quantitative analyst workflow from data to deployment.</p>
+              <a href="https://www.linkedin.com/pulse/quants-workflow-abhishake-gupta-8eftc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <h3 class="text-lg font-semibold text-slate-900">Medium</h3>
+          <p class="mt-1 max-w-3xl text-2sm text-slate-600">Featured articles on Medium.</p>
+
+          <div class="mt-6 grid gap-6 md:grid-cols-3">
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">What if I had bought NIFTY50 every day since 2000?</h3>
+              <p class="mt-2 text-2sm leading-relaxed text-slate-600">A practical exploration of long-term investing behavior using NIFTY50 as a baseline.</p>
+              <a href="https://medium.com/@letspython3.x/what-if-i-had-bought-nifty50-every-day-since-year-2000-60b20cb78545" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">MacOS Setup: Homebrew, iTerm2, Zsh, Oh My Zsh</h3>
+              <p class="mt-2 text-2sm leading-relaxed text-slate-600">A clean developer setup guide for macOS tooling and terminal productivity.</p>
+              <a href="https://medium.com/@letspython3.x/gotta-macos-install-homebrew-iterm2-zsh-ohmyzsh-4b620e7ac0d" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">Learn and Implement Candlestick Patterns (Python)</h3>
+              <p class="mt-2 text-2sm leading-relaxed text-slate-600">A hands-on guide to identifying and coding candlestick patterns for trading analysis.</p>
+              <a href="https://medium.com/@letspython3.x/learn-and-implement-candlestick-patterns-python-6de09854fa3e" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">Python File Format Conversion: RPT to CSV</h3>
+              <p class="mt-2 text-2sm leading-relaxed text-slate-600">Automating reporting workflows by converting legacy RPT data into CSV files using Python.</p>
+              <a href="https://medium.com/@letspython3.x/python-file-format-conversion-rpt-to-csv-files-e0ca7d1cd7b2" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -664,6 +646,15 @@
     if (emailBtn && emailReveal) {
       emailBtn.addEventListener('click', () => {
         emailReveal.classList.toggle('hidden');
+      });
+    }
+
+    const aboutMoreBtn = document.getElementById('aboutMoreBtn');
+    const aboutMore = document.getElementById('aboutMore');
+    if (aboutMoreBtn && aboutMore) {
+      aboutMoreBtn.addEventListener('click', () => {
+        const isHidden = aboutMore.classList.toggle('hidden');
+        aboutMoreBtn.textContent = isHidden ? 'Read more' : 'Read less';
       });
     }
   </script>
