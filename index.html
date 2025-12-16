@@ -1,112 +1,670 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Abhishake Gupta | Software Engineer</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta name="description" content="Abhishake Gupta - Software Engineer with 11+ years of experience in Python, JavaScript, React, NextJS, SQL, and MongoDB."/>
-    <meta name="keywords" content="Software Engineer, Python Developer, JavaScript Developer, React, NextJS, Full-Stack Developer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="assets/css/custom.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhishake Gupta | Software Engineer Portfolio</title>
+  <meta name="description" content="Abhishake Gupta — Senior Software Developer with a decade of expertise in Python, Flask, FastAPI, microservices, REST APIs, Docker/Kubernetes, and NoSQL/SQL databases." />
+  <meta name="keywords" content="Abhishake Gupta, Senior Software Developer, Python, FastAPI, Flask, Django, Microservices, REST APIs, Docker, Kubernetes" />
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+  <link rel="shortcut icon" href="/favicon.svg" />
+
+  <link rel="icon" href="/images/profilePic-thumbnail.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="/images/profilePic-thumbnail.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            navy: { 900: '#0F172A', 800: '#1E293B' },
+            accent: '#06B6D4',
+          },
+        },
+      },
+    };
+  </script>
 </head>
-<body class="is-preload">
 
-<!-- Header -->
-<div id="header">
-    <div class="top">
+<body class="font-sans text-slate-900 bg-white antialiased text-xl">
+
+  <!-- Skip Link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-xl focus:bg-white focus:px-4 focus:py-2 focus:shadow">Skip to content</a>
+
+  <!-- Header & Navigation -->
+  <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur border-b border-white/10">
+    <div class="mx-auto max-w-screen-2xl px-4 sm:px-6">
+      <div class="flex h-16 items-center justify-between">
         <!-- Logo -->
-        <div id="logo">
-            <span class="image avatar48"><img src="images/ProfilePic.jpeg" alt=""/></span>
-            <h1 id="title">Abhishake Gupta</h1>
-            <p>Software Engineer | <span id="experience-years"></span>+ years</p>
-        </div>
+        <a href="#top" class="flex items-center gap-3" aria-label="Go to top">
+          <div class="grid h-9 w-9 place-items-center rounded-xl bg-white/10 text-white text-2sm font-bold ring-1 ring-white/15">AG</div>
+          <div class="leading-tight">
+            <div class="text-2sm font-semibold text-white">Abhishake Gupta</div>
+            <div class="text-xs text-white/70">Senior Software Developer</div>
+          </div>
+        </a>
 
-        <!-- Nav -->
-        <nav id="nav">
-            <ul>
-                <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-                <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-                <li><a href="#posts" id="posts-link"><span class="icon solid fa-pen-nib">Posts</span></a></li>
-                <li><a href="#career" id="career-link"><span class="icon solid fa-briefcase">Career Journey</span></a></li>
-                <li><a href="#projects" id="projects-link"><span class="icon solid fa-code">Projects</span></a></li>
-                <li><a href="#certifications" id="certifications-link"><span class="icon solid fa-certificate">Certifications</span></a></li>
-                <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-            </ul>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:block" aria-label="Primary">
+          <ul class="flex items-center gap-6 text-2sm font-medium text-white/80">
+            <li><a class="hover:text-white transition" href="#about">About</a></li>
+            <li><a class="hover:text-white transition" href="#experience">Experience</a></li>
+            <li><a class="hover:text-white transition" href="#skills">Skills</a></li>
+            <li><a class="hover:text-white transition" href="#education">Education</a></li>
+            <li><a class="hover:text-white transition" href="#projects">Projects</a></li>
+            <li><a class="hover:text-white transition" href="#posts">Posts</a></li>
+          </ul>
         </nav>
-    </div>
 
-    <div class="bottom">
-        <!-- Social Icons -->
-        <ul class="icons">
-            <li><a href="https://twitter.com/letspython3x" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="https://github.com/letspython3x/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="https://www.linkedin.com/in/abhishake-gupta/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://medium.com/@letspython3.x" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-            <li><a href="https://www.youtube.com/@LetsPython3x" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- Main -->
-<div id="main">
-    <!-- Intro Section -->
-    <div id="intro-section">
-        <div class="thumbnail-container" style="text-align: center; margin-bottom: 20px;">
-            <img src="images/ProfilePic.jpeg" alt="Abhishake Gupta" class="profile-thumbnail">
+        <!-- CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 transition hover:brightness-95" aria-label="Contact Me">Contact Me</a>
+          <button id="mobileMenuBtn" type="button" class="inline-flex items-center justify-center rounded-xl bg-white/10 p-2 text-white ring-1 ring-white/15 md:hidden" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
         </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden border-t border-white/10 pb-4 md:hidden">
+        <nav aria-label="Mobile">
+          <ul class="grid gap-2 pt-4 text-2sm font-medium text-white/85">
+            <li><a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#about">About</a></li>
+            <li><a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#experience">Experience</a></li>
+            <li><a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#skills">Skills</a></li>
+            <li><a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#education">Education</a></li>
+            <li><a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#projects">Projects</a></li>
+            <li><a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#posts">Posts</a></li>
+          </ul>
+        </nav>
+        <div class="pt-4">
+          <a href="#contact" class="inline-flex w-full items-center justify-center rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 transition hover:brightness-95">Contact Me</a>
+        </div>
+      </div>
     </div>
-    
-    <!-- Portfolio Section -->
-    <div id="portfolio-section"></div>
-    
-    <!-- Career Section -->
-    <div id="career-section"></div>
-    
-    <!-- Posts Section -->
-    <div id="posts-section"></div>
-    
-    <!-- About Me Section -->
-    <div id="about-section"></div>
-    
-    <!-- Projects Section -->
-    <div id="projects-section"></div>
-    
-    <!-- Certifications Section -->
-    <div id="certifications-section"></div>
-</div>
+  </header>
 
-<!-- Footer -->
-<div id="footer">
-    <!-- Copyright -->
-    <ul class="copyright">
-        <li>&copy; <span id="current-year"></span> Abhishake Gupta. All rights reserved.</li>
-        <li>Software Engineer</li>
-    </ul>
-</div>
+  <!-- Main Content -->
+  <main id="main">
 
-<script>
-    // Set current year in footer
+    <!-- Hero / About Me -->
+    <section id="top" class="bg-white">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 sm:py-24">
+        <div class="grid items-center gap-10 lg:grid-cols-12">
+          <!-- Text -->
+          <div class="lg:col-span-7">
+            <p class="text-2sm font-semibold tracking-wide text-slate-500">Senior Software Developer</p>
+            <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Abhishake Gupta</h1>
+            <p class="mt-3 text-lg font-semibold text-navy-900">Python · Microservices · REST APIs · Backend Systems</p>
+            <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
+              Highly experienced Senior Software Developer with over a decade of expertise in the complete SDLC, specializing in building scalable backend systems, microservices, and robust REST APIs. Proficient in Python, Flask, FastAPI with hands-on experience in modern architectures, containerization (Docker/Kubernetes), and NoSQL/SQL databases.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a href="#contact" class="inline-flex items-center justify-center rounded-2xl bg-accent px-6 py-3 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Contact Me</a>
+              <a href="#" class="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-3 text-2sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">Download CV</a>
+            </div>
+
+            <dl class="mt-10 grid grid-cols-2 gap-6 sm:max-w-md">
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <dt class="text-xs font-semibold text-slate-500">Experience</dt>
+                <dd class="mt-1 text-2xl font-bold text-slate-900"><span id="experience-years">11</span> years</dd>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <dt class="text-xs font-semibold text-slate-500">Location</dt>
+                <dd class="mt-1 text-2xl font-bold text-slate-900">India · Remote</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Image -->
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-4 shadow">
+              <img src="images/ProfilePic.jpeg" alt="Professional headshot of Abhishake Gupta" class="mx-auto h-80 w-80 rounded-full object-cover object-center sm:h-96 sm:w-96" />
+              <div class="mt-4 rounded-2xl bg-white p-4">
+                <p class="text-2sm font-semibold text-slate-900">Value Proposition</p>
+                <p class="mt-1 text-2sm leading-relaxed text-slate-600">Trusted full-stack delivery: clear communication, strong ownership, and scalable engineering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recognition -->
+    <section id="recognition" class="bg-gradient-to-r from-navy-900 to-navy-800">
+      <div class="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6">
+        <div class="flex flex-col items-center gap-6 md:flex-row md:gap-10">
+          <div class="flex-shrink-0">
+            <div class="grid h-16 w-16 place-items-center rounded-2xl bg-accent text-navy-900">
+              <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-4.5A3.75 3.75 0 0 0 12.75 10.5h-.75m0 0V6.75A2.25 2.25 0 0 0 9.75 4.5h-.75a2.25 2.25 0 0 0-2.25 2.25V10.5m5.25 0H6.75m0 0A3.75 3.75 0 0 0 3 14.25v4.5"/></svg>
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-xs font-semibold uppercase tracking-wider text-accent">Recognition</p>
+            <h2 class="mt-1 text-xl font-bold text-white sm:text-2xl">ECE Orientation & Induction — Guest Speaker</h2>
+            <p class="mt-2 max-w-2xl text-2sm leading-relaxed text-white/70">Honored to speak at the ECE orientation, sharing insights and experiences with the incoming batch.</p>
+          </div>
+          <div class="flex-shrink-0 md:ml-auto">
+            <a href="https://www.linkedin.com/posts/abhishake-gupta_ece-orientationabrcumabrinduction-batch-activity-7366516044737208321-YD43" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-2.5 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">View post <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me (detailed) -->
+    <section id="about" class="bg-slate-50">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">About Me</h2>
+        <p class="mt-2 max-w-3xl text-slate-600">Proven ability to optimize performance, implement TDD/BDD best practices, and collaborate across engineering teams to deliver impactful core product features.</p>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-3">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p class="text-2sm font-semibold text-slate-900">Backend Expertise</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Scalable backend systems, microservices architecture, REST APIs, and multi-provider delivery orchestration with failover mechanisms.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p class="text-2sm font-semibold text-slate-900">Performance & Quality</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">API latency optimization, TDD/BDD practices, code reviews, PEP-8 standards, and chunk-based task architectures for high-volume workloads.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p class="text-2sm font-semibold text-slate-900">Modern DevOps</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Docker, Kubernetes, CI/CD pipelines, monitoring with ELK/Splunk/Datadog, and migration from monolithic to microservice architectures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Career Contours -->
+    <section id="experience" class="bg-white">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Experience / Career Contours</h2>
+        <p class="mt-2 max-w-3xl text-slate-600">More than a decade of professional experience across backend systems, microservices, and DevOps.</p>
+
+        <div class="mt-10 grid gap-6">
+          <!-- Role 1: ItsaCheckmate -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior Python Developer</h3>
+                <p class="mt-1 text-2sm text-slate-600">ItsaCheckmate</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Jul 2023 — Present</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Led multi-provider delivery orchestration (DoorDash, Uber Direct, Relay) with unified abstraction layer for quoting, dispatching, and tracking.</li>
+              <li>Migrated menu system to new architecture with Redis caching, reducing load times from 40 minutes to seconds.</li>
+              <li>Designed real-time failover mechanism for automatic rerouting to backup providers, reducing order cancellations.</li>
+              <li>Re-engineered Celery background tasks from monolithic to chunk-based architecture with connection pooling.</li>
+            </ul>
+          </article>
+
+          <!-- Role 2: Bluetick Consultants -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Engineer</h3>
+                <p class="mt-1 text-2sm text-slate-600">Bluetick Consultants</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Aug 2022 — Jun 2023</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Built "Company Management" microservice using Golang and Fiber for complex tree-like folder structures.</li>
+              <li>Analyzed and documented legacy "Megatron" E-Commerce Cart System (Python-Flask RESTful API).</li>
+              <li>Conducted Knowledge Transfer sessions on architectural designs and feature enhancements.</li>
+              <li>Implemented automated Postman collections for REST API testing.</li>
+            </ul>
+          </article>
+
+          <!-- Role 3: Rackspace Technology -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Developer III</h3>
+                <p class="mt-1 text-2sm text-slate-600">Rackspace Technology</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Nov 2019 — Aug 2022</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Enhanced Flask-based StorageCenter application for hardware data collection (Dell, EMC, PureStorage).</li>
+              <li>Reduced API latency by 60% via RabbitMQ and Celery automation.</li>
+              <li>Migrated monolithic application to Kubernetes-based microservice architecture; refactored frontend to React SPA.</li>
+              <li>Developed WidgetBoss CLI tools, reducing Client Facing Team's SLA time by 70%.</li>
+            </ul>
+          </article>
+
+          <!-- Role 4: Gemini Solutions -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior Software Engineer (ETL)</h3>
+                <p class="mt-1 text-2sm text-slate-600">Gemini Solutions</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Dec 2017 — Nov 2019</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Designed Kapture-CRM microservice for customer ticket history tracking via Node.js, Express, and Kafka.</li>
+              <li>Developed Django APIs for Mediscan — descriptive and predictive analysis of patient vitals.</li>
+              <li>Built internal CLI tools for FTP/SFTP access scheduled via Autosys.</li>
+              <li>Automated GoldenGate replication delay calculation and reporting from Sybase to Oracle.</li>
+            </ul>
+          </article>
+
+          <!-- Role 5: Global Analytics -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">DevOps Engineer</h3>
+                <p class="mt-1 text-2sm text-slate-600">Global Analytics</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Aug 2016 — Nov 2017</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Partnered with developers to implement DONS (DevOps Navigation System) monitoring tool API in Django.</li>
+              <li>Integrated with Zabbix for automated alerts and issue tracking.</li>
+              <li>Reduced manpower required for issue identification and escalation by 80%.</li>
+            </ul>
+          </article>
+
+          <!-- Role 6: Infosys -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2lg font-semibold text-slate-900">Senior System Engineer (Ops)</h3>
+                <p class="mt-1 text-2sm text-slate-600">Infosys</p>
+              </div>
+              <p class="text-2sm font-semibold text-accent">Feb 2014 — Jul 2016</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-2sm leading-relaxed text-slate-600">
+              <li>Developed Flask-Restful backend APIs for Bus Ticket Vending POC serving Android frontend.</li>
+              <li>Provided L2 support for server applications using Splunk, ELK, and Oracle Siebel CRM.</li>
+              <li>Collaborated with cross-functional teams on automated ticketing system implementation.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack -->
+    <section id="skills" class="bg-slate-50">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Skills & Tech Stack</h2>
+        <p class="mt-2 max-w-3xl text-slate-600">Technical expertise across languages, frameworks, databases, and DevOps.</p>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2sm font-semibold text-slate-900">Languages</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Python (Advanced)</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">JavaScript</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Node.js</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Golang</span>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2sm font-semibold text-slate-900">Frameworks</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">FastAPI</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Flask</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Django</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">React.js</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Express</span>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2sm font-semibold text-slate-900">Async & Messaging</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">RabbitMQ</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Celery</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Kafka</span>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2sm font-semibold text-slate-900">Databases</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">PostgreSQL</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">MySQL</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">MongoDB</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Redis</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Oracle</span>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2sm font-semibold text-slate-900">DevOps & Tools</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Docker</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Kubernetes</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Git</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Jenkins</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Autosys</span>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2sm font-semibold text-slate-900">Monitoring & Logging</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">ELK Stack</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Splunk</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">NewRelic</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Datadog</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-2sm text-slate-700">Zabbix</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="bg-white">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Education & Certifications</h2>
+        <p class="mt-2 max-w-3xl text-slate-600">Formal education and professional certifications.</p>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <!-- Education Column -->
+          <div class="space-y-6">
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">B.Tech in Electronics & Communication (ECE)</h3>
+              <p class="mt-1 text-2sm text-slate-600">BPIT, Rohini (GGSIPU), Delhi</p>
+              <p class="mt-2 text-2sm font-semibold text-accent">2013 | 76%</p>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">Senior Secondary (XII)</h3>
+              <p class="mt-1 text-2sm text-slate-600">Bal Bharti Public School, CBSE, Delhi</p>
+              <p class="mt-2 text-2sm font-semibold text-accent">2009 | 80%</p>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-2lg font-semibold text-slate-900">Higher Secondary (X)</h3>
+              <p class="mt-1 text-2sm text-slate-600">J.M. Senior Secondary School, CBSE, Delhi</p>
+              <p class="mt-2 text-2sm font-semibold text-accent">2007 | 87%</p>
+            </article>
+          </div>
+
+          <!-- Certifications Column -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Certifications & Affiliations</h3>
+            <ul class="mt-3 space-y-2 text-2sm leading-relaxed text-slate-600">
+              <li><span class="font-medium text-slate-900">Trading:</span> Stock Trading Strategies, Technical Analysis (Dec 2022)</li>
+              <li><span class="font-medium text-slate-900">Trading:</span> Advanced Interactive Brokers API, Udemy (Oct 2022)</li>
+              <li><span class="font-medium text-slate-900">Kubernetes:</span> Introduction to Kubernetes, Linux Academy (Aug 2021)</li>
+              <li><span class="font-medium text-slate-900">Git:</span> Git Version Control, Udemy (May 2018)</li>
+              <li><span class="font-medium text-slate-900">Python:</span> Python Certification, Infosys (Mar 2015)</li>
+              <li><span class="font-medium text-slate-900">Systems:</span> Open Sources & Systems Training, Infosys (May 2014)</li>
+              <li><span class="font-medium text-slate-900">Verilog:</span> Verilog Training, Electronics for You (Jun 2012)</li>
+              <li><span class="font-medium text-slate-900">MATLAB:</span> MATLAB Training, DRDO (Jun 2011)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contributions & Projects -->
+    <section id="projects" class="bg-slate-50">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Contributions & Projects</h2>
+            <p class="mt-2 max-w-3xl text-slate-600">Key projects showcasing backend systems, microservices, and DevOps expertise.</p>
+          </div>
+          <a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-2sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">Let's collaborate</a>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Project 1: Direct Ordering (Open Tender) -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Direct Ordering</h3>
+            <p class="text-2sm text-slate-500">Open Tender</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">All-in-one platform that allows restaurant brands to launch digital ordering system—including an admin panel, customer-facing web portal, and mobile app—often in less than a week. We support everything from menu, in-house & third-party loyalty, and order processing like Pickup, Delivery, and Catering.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">FastAPI</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">MySql</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Docker</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Postman</span>
+            </div>
+          </article>
+
+          <!-- Project 1: Company Management -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Company Management</h3>
+            <p class="text-2sm text-slate-500">Part of Test Studio Management</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Built microservice in Golang-Fiber for CRUD operations on tree-like folder structures for testcase files. Created SDLC design docs with product team and architects.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Golang</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Fiber</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Postman</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Megatron -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Megatron</h3>
+            <p class="text-2sm text-slate-500">E-Commerce Cart Management System</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Analyzed and documented existing Python-Flask RESTful API project. Conducted KT sessions for team members on designs, feature enhancements, and bug fixing.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Flask</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">REST API</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Kapture-CRM -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Kapture-CRM</h3>
+            <p class="text-2sm text-slate-500">Customer Ticket History Microservice</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Microservice to track customer tickets before/after posting to 3rd party CRM. Implemented RESTful APIs via Node.js, Express, and Kafka in a team of 6.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Node.js</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Express</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Kafka</span>
+            </div>
+          </article>
+
+          <!-- Project 4: StorageCenter -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">StorageCenter</h3>
+            <p class="text-2sm text-slate-500">Hardware Data Collection & Analysis</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Flask-based project for hardware data from Dell, EMC, PureStorage, NetApp. Reduced API latency by 60% via RabbitMQ-Celery. Migrated to Kubernetes microservices and React SPA.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Flask</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">React</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Docker</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">K8s</span>
+            </div>
+          </article>
+
+          <!-- Project 5: WidgetBoss -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">WidgetBoss (BackupCenter)</h3>
+            <p class="text-2sm text-slate-500">CLI Tools for Client Data Operations</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Reduced SLA time by 70% for Client Facing teams by providing CLI tools for storage, backup, and scheduling operations. Conducted code reviews and PEP-8 training.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">CLI</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">PEP-8</span>
+            </div>
+          </article>
+
+          <!-- Project 6: ETL Jobs -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">ETL Jobs & Migration</h3>
+            <p class="text-2sm text-slate-500">Data Pipeline Automation</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Built CLI scripts for FTP/SFTP/FTPS access via single script, scheduled via Autosys. Automated GoldenGate replication delay reporting from Sybase to Oracle.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Autosys</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Oracle</span>
+            </div>
+          </article>
+
+          <!-- Project 7: Mediscan -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Mediscan</h3>
+            <p class="text-2sm text-slate-500">Medical Vitals Analysis</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Django APIs for descriptive and predictive analysis of corona patients' vitals via USG and X-ray data. Tested and fine-tuned REST APIs via Postman.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Django</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">REST API</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Analytics</span>
+            </div>
+          </article>
+
+          <!-- Project 8: Bus Ticket Vending -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Automatic Bus Ticket Vending</h3>
+            <p class="text-2sm text-slate-500">POC for Automated Ticketing</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">POC to automate ticketing in passenger buses. Created SDLC design docs and developed Flask-Restful backend APIs serving data to Android frontend.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Flask</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">REST API</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Android</span>
+            </div>
+          </article>
+
+          <!-- Project 9: DONS -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">DONS</h3>
+            <p class="text-2sm text-slate-500">DevOps Navigation System</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Advanced monitoring web tool RESTful API in Django, synced with Zabbix for alerts. Reduced manpower by 80% for issue identification and escalation.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Django</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Zabbix</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">DevOps</span>
+            </div>
+          </article>
+
+          <!-- Project 10: Reporting Tools -->
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Reporting Tools</h3>
+            <p class="text-2sm text-slate-500">Log Analysis & Automation</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Spearheaded log analyzer and reporting tool to analyze test logs and create Excel reports. Ad-hoc automation tasks using Python, SQL, and shell scripting.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">SQL</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Shell</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Posts & Publications -->
+    <section id="posts" class="bg-white">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Posts & Publications</h2>
+        <p class="mt-2 max-w-3xl text-slate-600">Featured articles on LinkedIn.</p>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Comfort Zone: Where Your Dreams Go to Die Quietly</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Reflections on breaking out of comfort zones to pursue meaningful growth.</p>
+            <a href="https://www.linkedin.com/pulse/comfort-zone-where-your-dreams-go-die-quietly-abhishake-gupta-my9uc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Unlocking Alpha: Your Guide to Feature Engineering for Trading</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">A deep dive into feature engineering techniques for quantitative trading strategies.</p>
+            <a href="https://www.linkedin.com/pulse/unlocking-alpha-your-guide-feature-engineering-trading-gupta-9rlbc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-2lg font-semibold text-slate-900">Quants Workflow</h3>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">An overview of the quantitative analyst workflow from data to deployment.</p>
+            <a href="https://www.linkedin.com/pulse/quants-workflow-abhishake-gupta-8eftc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Read post <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (anchor for CTA) -->
+    <section id="contact" class="bg-slate-50">
+      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 text-center">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Let's Connect</h2>
+        <p class="mt-2 text-slate-600">Have a project in mind or just want to say hello? Reach out!</p>
+        <button id="emailBtn" type="button" class="mt-6 inline-flex items-center justify-center rounded-2xl bg-accent px-6 py-3 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Send an Email</button>
+        <p id="emailReveal" class="mt-4 hidden text-2sm text-slate-700">
+          <span class="font-semibold">Email:</span>
+          <a href="mailto:abhishakegupta91@gmail.com" class="underline hover:text-slate-900">abhishakegupta91@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-white/80">
+    <div class="mx-auto max-w-screen-2xl px-4 py-10 sm:px-6">
+      <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
+        <p class="text-2sm">&copy; <span id="current-year"></span> Abhishake Gupta. All rights reserved.</p>
+
+        <ul class="flex items-center gap-4">
+          <li>
+            <a href="https://twitter.com/letspython3x" target="_blank" rel="noopener" aria-label="Twitter" class="hover:text-white transition">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.155 11.675-11.495 0-.175 0-.349-.012-.522A8.18 8.18 0 0 0 22 5.92a8.19 8.19 0 0 1-2.357.636 4.077 4.077 0 0 0 1.804-2.235 8.29 8.29 0 0 1-2.606.98 4.13 4.13 0 0 0-7.034 3.743A11.71 11.71 0 0 1 3.39 4.62a4.012 4.012 0 0 0 1.277 5.5 4.1 4.1 0 0 1-1.87-.508v.051a4.122 4.122 0 0 0 3.31 4.036 4.1 4.1 0 0 1-1.862.07 4.13 4.13 0 0 0 3.852 2.83A8.28 8.28 0 0 1 2 18.407a11.68 11.68 0 0 0 6.29 1.84"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/abhishakegupta91/" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-white transition">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.51.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.338c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.021C22 6.484 17.522 2 12 2Z" clip-rule="evenodd"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abhishake-gupta/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-white transition">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.063-1.867-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.604v5.592z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="mt-6 text-center text-xs text-white/50">Looking for a reliable engineer? <a href="#contact" class="underline hover:text-white">Get in touch</a>.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('hidden');
+    });
+
+    // Dynamic year & experience (from Feb 2014)
     document.getElementById('current-year').textContent = new Date().getFullYear();
-    
-    // Calculate years of experience (started in 2014)
-    const startYear = 2014;
-    const currentYear = new Date().getFullYear();
-    const yearsOfExperience = currentYear - startYear;
-    document.getElementById('experience-years').textContent = yearsOfExperience;
-</script>
+    const startDate = new Date(2014, 1, 1); // Feb 2014
+    const now = new Date();
+    let years = now.getFullYear() - startDate.getFullYear();
+    let months = now.getMonth() - startDate.getMonth();
+    if (months < 0) { years--; months += 12; }
+    document.getElementById('experience-years').textContent = years + (months > 0 ? '+' : '');
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/section-loader.js"></script>
+    // Reveal email on button click
+    const emailBtn = document.getElementById('emailBtn');
+    const emailReveal = document.getElementById('emailReveal');
+    if (emailBtn && emailReveal) {
+      emailBtn.addEventListener('click', () => {
+        emailReveal.classList.toggle('hidden');
+      });
+    }
+  </script>
 
 </body>
 </html>
