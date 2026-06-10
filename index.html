@@ -60,6 +60,7 @@
             <li><a class="hover:text-white transition" href="#about">About</a></li>
             <li><a class="hover:text-white transition" href="#experience">Experience</a></li>
             <li><a class="hover:text-white transition" href="#skills">Skills</a></li>
+            <li><a class="hover:text-white transition" href="#ai-tools">AI Tools</a></li>
             <li><a class="hover:text-white transition" href="#education">Education</a></li>
             <li><a class="hover:text-white transition" href="#certifications">Certifications</a></li>
             <li><a class="hover:text-white transition" href="#projects">Projects</a></li>
@@ -99,46 +100,81 @@
   <!-- Main Content -->
   <main id="main">
 
-    <!-- Hero / About Me -->
-    <section id="top" class="bg-white">
-      <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 sm:py-24">
-        <div class="grid items-center gap-10 lg:grid-cols-12">
-          <!-- Text -->
-          <div class="lg:col-span-7">
-            <p class="text-2sm font-semibold tracking-wide text-slate-500">Sr. Backend Engineer · Open Source (nselib) · Intraday Trader</p>
-            <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Abhishake Gupta</h1>
-            <p class="mt-3 text-lg font-semibold text-navy-900">Backend Systems · Python & AWS · AI-Augmented Workflows · OAuth2/JWT · Docker/K8s · Low-Latency Systems</p>
-            <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
-              Sr. Backend Engineer with 12+ years building distributed systems across Finance, Food-Tech, Aviation, and E-commerce. I specialize in turning architectural chaos into resilient, high-performance reality — and I build with AI as a core part of the workflow, not an afterthought. By maintaining a structured context engine (architecture docs, API contracts, security protocols), I've achieved a 5–7× compound productivity advantage: full-scale security audits in 6 hours (vs. 30+), Redis caching strategies that cut latency from minutes to seconds, and high-availability failover systems on AWS. I like owning problems end-to-end: architecture, delivery, and production.
-            </p>
+    <!-- Hero -->
+    <section id="top" class="relative overflow-hidden bg-navy-900">
+      <!-- subtle grid texture -->
+      <div class="pointer-events-none absolute inset-0" style="background-image:radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0);background-size:32px 32px;"></div>
+      <!-- accent glow blobs -->
+      <div class="pointer-events-none absolute -top-40 -right-40 h-96 w-96 rounded-full bg-accent/10 blur-3xl"></div>
+      <div class="pointer-events-none absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-accent/8 blur-3xl"></div>
 
-            <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <a href="#contact" class="inline-flex items-center justify-center rounded-2xl bg-accent px-6 py-3 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Contact Me</a>
-              <a href="/assests/CV%20Abhishake%20Gupta-2026.pdf" download="Abhishake-Gupta-2026-CV.pdf" class="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-3 text-2sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">Download CV</a>
+      <div class="relative mx-auto max-w-screen-2xl px-4 py-20 sm:px-6 sm:py-28">
+        <div class="grid items-center gap-12 lg:grid-cols-12">
+
+          <!-- Text -->
+          <div class="hero-text lg:col-span-7 space-y-6">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">#OpenToWork</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white/60">Open Source · nselib</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white/60">Intraday Trader</span>
             </div>
 
-            <dl class="mt-10 grid grid-cols-2 gap-6 sm:max-w-md">
-              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <dt class="text-xs font-semibold text-slate-500">Experience</dt>
-                <dd class="mt-1 text-2xl font-bold text-slate-900"><span id="experience-years">12+</span> Y <span id="experience-months">0</span> M</dd>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-widest text-accent">Sr. Backend Engineer</p>
+              <h1 class="mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl">Abhishake<br>Gupta</h1>
+            </div>
+
+            <p class="max-w-2xl text-lg leading-relaxed text-white/70">
+              12+ years turning architectural chaos into resilient, high-performance systems — across Finance, Food-Tech, Aviation, and E-commerce. I build with AI as a core part of the workflow: structured context engines, not just prompts. The result: security audits in 6 hrs (was 30+), latency cut from minutes to seconds, and a <strong class="text-white font-semibold">5–7× compound productivity edge</strong>.
+            </p>
+
+            <div class="flex flex-wrap gap-2 text-xs font-medium text-white/50">
+              <span class="rounded-lg bg-white/5 px-2.5 py-1">Python</span>
+              <span class="rounded-lg bg-white/5 px-2.5 py-1">AWS</span>
+              <span class="rounded-lg bg-white/5 px-2.5 py-1">FastAPI</span>
+              <span class="rounded-lg bg-white/5 px-2.5 py-1">Redis</span>
+              <span class="rounded-lg bg-white/5 px-2.5 py-1">Docker / K8s</span>
+              <span class="rounded-lg bg-white/5 px-2.5 py-1">OAuth2 / JWT</span>
+              <span class="rounded-lg bg-white/5 px-2.5 py-1">Claude · Windsurf</span>
+            </div>
+
+            <div class="flex flex-wrap gap-3 pt-2">
+              <a href="#contact" class="inline-flex items-center justify-center rounded-2xl bg-accent px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg transition hover:brightness-105 hover:shadow-accent/30">Contact Me</a>
+              <a href="/assests/CV%20Abhishake%20Gupta-2026.pdf" download="Abhishake-Gupta-2026-CV.pdf" class="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Download CV</a>
+              <a href="https://www.linkedin.com/in/abhishake-gupta/" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">LinkedIn →</a>
+            </div>
+
+            <dl class="grid grid-cols-3 gap-4 sm:max-w-lg pt-2">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                <dd class="text-2xl font-bold text-white"><span id="experience-years">12</span>+ Yrs</dd>
+                <dt class="mt-1 text-xs text-white/50">Experience</dt>
               </div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <dt class="text-xs font-semibold text-slate-500">Location</dt>
-                <dd class="mt-1 text-2xl font-bold text-slate-900">Gurugram, India · Remote</dd>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                <dd class="text-2xl font-bold text-accent">5–7×</dd>
+                <dt class="mt-1 text-xs text-white/50">AI Productivity</dt>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                <dd class="text-2xl font-bold text-white">6</dd>
+                <dt class="mt-1 text-xs text-white/50">Domains</dt>
               </div>
             </dl>
           </div>
 
           <!-- Image -->
-          <div class="lg:col-span-5">
-            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-4 shadow">
-              <img src="images/ProfilePic.jpeg" alt="Professional headshot of Abhishake Gupta" class="mx-auto h-80 w-80 rounded-full object-cover object-center sm:h-96 sm:w-96" />
-              <div class="mt-4 rounded-2xl bg-white p-4">
-                <p class="text-2sm font-semibold text-slate-900">Value Proposition</p>
-                <p class="mt-1 text-2sm leading-relaxed text-slate-600">Trusted full-stack delivery: clear communication, strong ownership, and scalable engineering.</p>
+          <div class="hero-image lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative">
+              <!-- glow ring -->
+              <div class="absolute inset-0 rounded-full bg-accent/20 blur-2xl scale-110"></div>
+              <div class="relative rounded-3xl border border-white/10 bg-white/5 p-3 shadow-2xl backdrop-blur">
+                <img src="images/ProfilePic.jpeg" alt="Abhishake Gupta" class="h-80 w-80 rounded-2xl object-cover object-center sm:h-96 sm:w-96" />
+                <div class="mt-3 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+                  <p class="text-xs font-semibold text-accent">What I bring</p>
+                  <p class="mt-1 text-xs leading-relaxed text-white/70">End-to-end ownership. AI-native workflows. Systems that hold up in production.</p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -183,7 +219,7 @@
     <!-- About Me (detailed) -->
     <section id="about" class="bg-slate-50">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">About Me</h2>
+        <h2 class="section-heading text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">About Me</h2>
         <div class="mt-2 max-w-6xl space-y-4 text-slate-600">
           <p>With over 12 years of experience building distributed systems in Finance, E-commerce, Food Tech, and Aviation, I specialize in turning architectural chaos into resilient, high-performance reality.</p>
           <p><strong>Documentation-First AI Development:</strong> I don't just use LLMs — I build Context Engines. By maintaining a structured, living knowledge base of architecture, security protocols, and API contracts, I've achieved a 5–7× compound productivity advantage. This lets me own high-level architecture and reliability while using AI to accelerate code generation, documentation, and security reviews.</p>
@@ -198,17 +234,17 @@
         </div>
 
         <div class="mt-8 grid gap-6 lg:grid-cols-3">
-          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <p class="text-2sm font-semibold text-slate-900">Backend Expertise</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Scalable backend systems and microservices, API-first REST APIs (OpenAPI), OAuth2/JWT auth, and integration-heavy orchestration with practical failover mechanisms.</p>
+          <div class="card-lift rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p class="text-2sm font-semibold text-slate-900">🏗️ Backend at scale</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Microservices, API-first design (OpenAPI), OAuth2/JWT auth, webhook receivers with HMAC verification, multi-tenant SaaS patterns — built to survive production.</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <p class="text-2sm font-semibold text-slate-900">AI-Augmented Development</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Context-engine driven workflows with LLMs for 5–7× productivity gains. Security audits in hours, not days. AI as a partner in architecture, not just code generation.</p>
+          <div class="card-lift rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p class="text-2sm font-semibold text-slate-900">🤖 AI-native workflows</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Context engines, not just prompts. Security audits in 6 hrs. Code reviews that never sleep. A 5–7× productivity edge that compounds across every project.</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <p class="text-2sm font-semibold text-slate-900">Performance & DevOps</p>
-            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Redis caching, TDD/BDD, Docker, Kubernetes, CI/CD pipelines, and ELK/Splunk/Datadog monitoring — from monolith to microservices on AWS.</p>
+          <div class="card-lift rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p class="text-2sm font-semibold text-slate-900">⚡ Performance & DevOps</p>
+            <p class="mt-2 text-2sm leading-relaxed text-slate-600">Redis caching that cut latency from 40 min → seconds. TDD/BDD. Docker, K8s, CI/CD, and full observability with ELK / Datadog — from monolith to microservices.</p>
           </div>
         </div>
       </div>
@@ -217,10 +253,10 @@
     <!-- Skills & Tech Stack -->
     <section id="skills" class="bg-slate-50">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Skills & Tech Stack</h2>
+        <h2 class="section-heading text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Skills & Tech Stack</h2>
         <p class="mt-2 max-w-3xl text-slate-600">Technical expertise across languages, frameworks, databases, and DevOps.</p>
 
-        <div class="mt-8 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+        <div class="reveal-group mt-8 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 class="text-2sm font-semibold text-slate-900">Languages</h3>
             <div class="mt-4 flex flex-wrap gap-2">
@@ -343,13 +379,84 @@
       </div>
     </section>
 
+    <!-- AI Tools & Workflow -->
+    <section id="ai-tools" class="bg-navy-900 relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0" style="background-image:radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0);background-size:28px 28px;"></div>
+      <div class="pointer-events-none absolute top-0 right-0 h-64 w-64 rounded-full bg-accent/8 blur-3xl"></div>
+      <div class="relative mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
+        <div class="text-center mb-10">
+          <p class="text-xs font-semibold uppercase tracking-widest text-accent">How I build in 2026</p>
+          <h2 class="mt-2 text-2xl font-bold text-white sm:text-3xl">AI-Native Toolkit</h2>
+          <p class="mt-2 max-w-2xl mx-auto text-sm text-white/60">I don't just use AI tools — I build context engines around them. Here's the stack that gives me a 5–7× edge.</p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+          <div class="reveal group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-accent/40 hover:bg-white/8 hover:-translate-y-1 duration-200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="grid h-10 w-10 place-items-center rounded-xl bg-accent/10 border border-accent/20">
+                <svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-white">Claude</p>
+                <p class="text-xs text-accent">Anthropic</p>
+              </div>
+            </div>
+            <p class="text-xs leading-relaxed text-white/60">My primary AI partner for architecture reviews, code generation, security audits, and documentation. Claude in Cowork + Claude Code for end-to-end agentic workflows.</p>
+          </div>
+
+          <div class="reveal group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-accent/40 hover:bg-white/8 hover:-translate-y-1 duration-200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="grid h-10 w-10 place-items-center rounded-xl bg-accent/10 border border-accent/20">
+                <svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-white">Windsurf</p>
+                <p class="text-xs text-accent">Codeium</p>
+              </div>
+            </div>
+            <p class="text-xs leading-relaxed text-white/60">AI-first IDE for flow-state coding. Cascade agent handles multi-file refactors while I stay focused on architecture and business logic.</p>
+          </div>
+
+          <div class="reveal group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-accent/40 hover:bg-white/8 hover:-translate-y-1 duration-200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="grid h-10 w-10 place-items-center rounded-xl bg-accent/10 border border-accent/20">
+                <svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-white">Cursor</p>
+                <p class="text-xs text-accent">Anysphere</p>
+              </div>
+            </div>
+            <p class="text-xs leading-relaxed text-white/60">For deep codebase conversations — codebase-aware chat, symbol search, and inline edits. Great when I need to reason about a whole service at once.</p>
+          </div>
+
+          <div class="reveal group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-accent/40 hover:bg-white/8 hover:-translate-y-1 duration-200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="grid h-10 w-10 place-items-center rounded-xl bg-accent/10 border border-accent/20">
+                <svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-white">Context Engine</p>
+                <p class="text-xs text-accent">My method</p>
+              </div>
+            </div>
+            <p class="text-xs leading-relaxed text-white/60">A structured, living knowledge base — architecture diagrams, API contracts, security runbooks, ADRs. Feeds every AI tool with precision context so outputs are production-grade, not generic.</p>
+          </div>
+
+        </div>
+
+        <p class="mt-8 text-center text-xs text-white/30 italic">"I don't just prompt — I engineer the context that makes AI output trustworthy."</p>
+      </div>
+    </section>
+
     <!-- Experience / Career Contours -->
     <section id="experience" class="bg-white">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Experience / Career Contours</h2>
+        <h2 class="section-heading text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Experience</h2>
         <p class="mt-2 max-w-3xl text-slate-600">More than a decade of professional experience across backend systems, microservices, and DevOps.</p>
 
-        <div class="mt-10 grid gap-6">
+        <div class="reveal-group mt-10 grid gap-6">
           <!-- Role 1: Checkmate -->
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
@@ -490,10 +597,10 @@
     <!-- Certifications -->
     <section id="certifications" class="bg-slate-50">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Certifications & Courses</h2>
+        <h2 class="section-heading text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Certifications & Courses</h2>
         <p class="mt-2 max-w-3xl text-slate-600">Professional certifications and continuous learning.</p>
 
-        <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="reveal-group mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <!-- AI & Generative AI -->
           <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 class="text-lg font-semibold text-slate-900">AI & Generative AI</h3>
@@ -701,7 +808,7 @@
     <!-- Posts & Publications -->
     <section id="posts" class="bg-white">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6">
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Posts & Publications</h2>
+        <h2 class="section-heading text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Posts & Publications</h2>
 
         <div class="mt-8">
           <h3 class="text-lg font-semibold text-slate-900">LinkedIn</h3>
@@ -785,9 +892,9 @@
     <!-- Contact (anchor for CTA) -->
     <section id="contact" class="bg-slate-50">
       <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 text-center">
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Let's Connect</h2>
-        <p class="mt-2 text-slate-600">Have a project in mind or just want to say hello? Reach out!</p>
-        <button id="emailBtn" type="button" class="mt-6 inline-flex items-center justify-center rounded-2xl bg-accent px-6 py-3 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Send an Email</button>
+        <h2 class="section-heading inline-block text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Let's Build Something</h2>
+        <p class="mt-3 text-slate-600">Open to new roles, freelance projects, or just a good engineering conversation. Drop me a line.</p>
+        <button id="emailBtn" type="button" class="mt-6 inline-flex items-center justify-center rounded-2xl bg-accent px-6 py-3 text-2sm font-semibold text-slate-900 shadow transition hover:brightness-95">Reveal Email</button>
         <p id="emailReveal" class="mt-4 hidden text-2sm text-slate-700">
           <span class="font-semibold">Email:</span>
           <a href="mailto:abhishakegupta91@gmail.com" class="underline hover:text-slate-900">abhishakegupta91@gmail.com</a>
@@ -822,9 +929,38 @@
         </ul>
       </div>
 
-      <p class="mt-6 text-center text-xs text-white/50">Looking for a reliable engineer? <a href="#contact" class="underline hover:text-white">Get in touch</a>.</p>
+      <p class="mt-6 text-center text-xs text-white/50">Built with Claude · Windsurf · GitHub Pages · Tailwind CSS &nbsp;·&nbsp; <a href="#contact" class="underline hover:text-white">Open to work — let's talk</a>.</p>
     </div>
   </footer>
+
+  <!-- Animations & Interactions -->
+  <style>
+    /* Scroll-reveal base state */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    /* Stagger children inside a reveal-group */
+    .reveal-group > * { opacity: 0; transform: translateY(20px); transition: opacity 0.45s ease, transform 0.45s ease; }
+    .reveal-group.visible > *:nth-child(1) { opacity:1;transform:translateY(0);transition-delay:0ms }
+    .reveal-group.visible > *:nth-child(2) { opacity:1;transform:translateY(0);transition-delay:80ms }
+    .reveal-group.visible > *:nth-child(3) { opacity:1;transform:translateY(0);transition-delay:160ms }
+    .reveal-group.visible > *:nth-child(4) { opacity:1;transform:translateY(0);transition-delay:240ms }
+    .reveal-group.visible > *:nth-child(5) { opacity:1;transform:translateY(0);transition-delay:320ms }
+    .reveal-group.visible > *:nth-child(6) { opacity:1;transform:translateY(0);transition-delay:400ms }
+    .reveal-group.visible > *:nth-child(7) { opacity:1;transform:translateY(0);transition-delay:480ms }
+    /* Hero entrance */
+    .hero-text { animation: heroFadeUp 0.8s ease both; }
+    .hero-image { animation: heroFadeUp 0.8s 0.2s ease both; }
+    @keyframes heroFadeUp { from { opacity:0; transform:translateY(32px); } to { opacity:1; transform:translateY(0); } }
+    /* Card hover lift */
+    article, .card-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    article:hover, .card-lift:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.10); }
+    /* Accent underline on section headings */
+    .section-heading::after { content:''; display:block; width:40px; height:3px; background:#06B6D4; border-radius:99px; margin-top:8px; }
+    /* Nav active indicator */
+    nav a { position:relative; }
+    nav a::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:1px; background:#06B6D4; transition:width 0.2s ease; }
+    nav a:hover::after { width:100%; }
+  </style>
 
   <!-- Scripts -->
   <script>
@@ -865,6 +1001,12 @@
         aboutMoreBtn.textContent = isHidden ? 'Read more' : 'Read less';
       });
     }
+
+    // Scroll-reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-group').forEach(el => observer.observe(el));
   </script>
 
   <!-- Favicon -->
